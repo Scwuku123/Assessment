@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Vue js CDN</title>
+        <link ref="stylesheet" href="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js">
+    </head>
+    <body>
+        <div id="app">
+            <p>
+                {{ name }} {{ address }}
+            </p>
+            <p v-html="htmlredering">{{ htmlredering }}</p>
+            <p v-html="htmlparagraph">{{ htmlparagraph }}</p>
+            <img v-im="htmlimage" src="https://uncplan.files.wordpress.com/2016/03/tumblr_lyv02zlzaw1qki1yho1_1280.jpg">
+            
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>SIT120</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+<link rel="stylesheet" href="style.css">
+<div id="v-model-multiple-checkboxes" class="Players">
+    <input type="checkbox" id="Kobe" value="Kobe" v-model="checkedNames" />
+    <label for="Kobe">Kobe</label>
+    <input type="checkbox" id="Jordan" value="Jordan" v-model="checkedNames" />
+    <label for="Jordan">Jordan</label>
+    <input type="checkbox" id="Iverson" value="Iverson" v-model="checkedNames" />
+    <label for="Iverson">Iverson</label>
+    <br />
+    <span>Favorate player: {{ checkedNames }}</span>
+  </div>
+  </html>

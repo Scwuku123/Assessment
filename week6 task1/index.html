@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+
+  
+      <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="login">
+  <h2>Log In</h2>
+  <fieldset>
+    <div id = "User_Email">
+      <label>Email</label>
+    <input type="text" v-model="Email" />
+    </div>
+    <div id= "User_name">
+      <label>Name</label>
+      <input type="text" v-model="user_name">
+    </div>
+    <div id = "User_password">
+      <label>Password</label>
+  	<input type="text" v-model="Password" />
+  </div>
+  </fieldset>
+  <input type="submit" value="Log In" />
+  <div class="utilities">
+    <a href="#">Forgot Password?</a>
+    <a href="#">Sign Up &rarr;</a>
+  </div>
+</div>
+  
+  
+
+</body>
+
+</html>

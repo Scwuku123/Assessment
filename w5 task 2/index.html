@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://cdn/staticfile.org/vue/2.2.2/vue.min.js"></script>
+        <link rel="styleSheet" href="style.css">
+    </head>
+    <body class = "background">
+        <div id = "task2">
+            <button v-on:click = "show = !show">Click me to show who is him in background</button>
+            <transition name="Kobe">
+                <h1 v-if="show">He is Kobe</h1>
+            </transition>
+        </div>
+        <script type= "text/javascript">
+        new Vue({
+            el:'task2',
+            data:{
+                show: true
+            }
+        })
+        </script>
+    </body>
+</html>

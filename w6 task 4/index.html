@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>SIT 120
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
+    <link rel="styleSheet" href="style.css">
+    <title>Task 4</title>
+</head>
+<body class=bg>
+    <div id="task4">
+        <br><br><br><br><br><br><br>
+        <h2><input v-model.trim="Number" @chagen="get"></h2>
+        <h2><span>{{Number}}</span></h2>
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el:'#task4',
+        data:{
+            Number: 120
+        },
+        methods:{
+            get(){
+                console.log(this.Number);
+            }
+        }
+    })
+</script>
+</html>
